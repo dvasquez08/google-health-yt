@@ -4,4 +4,4 @@ This is where I will be saving the prompts for my Google Health API setup with C
 
 The video is in the works, so the prompts will be coming soon!
 
-In the meantime, (check out my channel!)[https://www.youtube.com/@davtekio]
+In the meantime, [Check out my channel!](https://www.youtube.com/@davtekio)
