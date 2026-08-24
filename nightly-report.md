@@ -4,7 +4,7 @@ existing routes or getDailySteps itself.
 
 REQUIREMENTS:
 1. Add src/report.ts, runnable as `npm run report`, that:
-   - defaults to YESTERDAY (local Edmonton time) as the target day, since by
+   - defaults to YESTERDAY (local YOUR_CITY_HERE time) as the target day, since by
      evening the device has synced the full prior day; accept an optional date
      argument (YYYY-MM-DD) to override.
    - also fetches the 3 days BEFORE the target day (4 days total) via
@@ -25,10 +25,10 @@ REQUIREMENTS:
    reports/steps-log.md. Create the folder if missing; keep it gitignored.
 4. If the refresh token is invalid/expired (invalid_grant), exit with a clear
    message telling me to re-authenticate at /auth/google — don't crash silently.
-5. Schedule: this runs nightly at 6:00 PM Mountain time. In the README, give the
-   exact Windows Task Scheduler setup (Create Task → Trigger: Daily at 6:00 PM →
+5. Schedule: this runs nightly at <YOUR_PREFERRED_TIME_AND_TIME_ZONE>. In the README, give the
+   exact Windows Task Scheduler setup (Create Task → Trigger: Daily at <YOUR_PREFERRED_TIME> →
    Action: run `npm run report` in the project directory), and note the machine
-   must be awake at 6 PM.
+   must be awake at <YOUR_PREFERRED_TIME>.
 
 After building, run `npm run report 2026-06-30` (a settled day with data before
 it) to prove the full comparison works end to end, and show me the console output
