@@ -13,10 +13,12 @@ This is where you will find the content related to my video for connecting the G
 
 Create a new folder for your project files, and to work out of in Claude Code. Create a text file and call it .env. Past the following in, replacing the placeholders with your Google account info.
 
+```env
 GOOGLE_CLIENT_ID=your-client-id
 GOOGLE_CLIENT_SECRET=your-client-secret
 GOOGLE_REDIRECT_URI=http://localhost:3000/auth/callback
 PORT=3000
+```
 
 ## Part 3: Project Build
 
